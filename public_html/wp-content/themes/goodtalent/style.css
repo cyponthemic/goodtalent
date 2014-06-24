@@ -521,3 +521,7 @@ form .button {
 form{
 	margin-top: 0.2rem;
 }
+
+body {
+	color: red !important;
+}
