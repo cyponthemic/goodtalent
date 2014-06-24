@@ -1,0 +1,28 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName goodtalent.com.au
+AuthUserFile /home/goodtale/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/goodtale/public_html/_vti_pvt/service.grp
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /goodtalent/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /goodtalent/index.php [L]
+</IfModule>
+
+# END WordPress

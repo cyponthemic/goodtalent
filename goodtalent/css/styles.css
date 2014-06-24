@@ -1,0 +1,17 @@
+.logo {
+	background: url(../images/logo.png);
+	height: 201px;
+	width: 300px;
+}
+
+h3 {
+	color: #999;
+}
+
+p {
+	color: #aaa;
+}
+
+.contact {
+	color: #f6702a;
+}

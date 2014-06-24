@@ -1,0 +1,199 @@
+/*
+Theme Name: Good Talent 2
+Description: Child theme for the Cornerstone starter theme
+Author: Cameron Boyle
+Author URI: http: //www.cameronboyle.com.au
+Template: cornerstone
+Version: 1.0
+*/
+
+@import url(../cornerstone/style.css);
+
+.alignleft {display: inline; float: left; margin-right: 1.625em;}
+.alignright {display: inline; float: right; margin-left: 1.625em;}
+.aligncenter {clear: both; display: block; margin-left: auto; margin-right: auto;}
+
+.widget_nav_menu ul,.widget_recent_entries ul,.clearing-thumbs{list-style:none}
+
+.top-bar .title-area .name a {
+	font-size: 1.0625em;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	padding: 0 15px;
+	line-height: 45px;
+}
+
+.orbit-container {background: transparent;}
+
+#content,.sidebar{margin-top: 1em;}
+
+.entry-content ul:not([class*="block-grid-"]):not(.clearing-thumbs),.widget_archive ul{margin-left:2em;}
+
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen { }
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
+
+/* Start edits 
+	background: color position/size repeat origin clip 
+*/
+/* Starter */
+* {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+
+h1 {
+	font-weight: lighter;
+	font-size: 42px;
+}
+
+	h2 {
+	font-size: 32px;
+	color: #fd5826;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 24px;
+}
+
+blockquote, blockquote p {
+	line-height: 1.6;
+	color: #fd5826;
+}
+
+blockquote {
+	margin: 0 0 1.11111rem;
+	padding: 0.5rem 1.11111rem 0 1.05556rem;
+	border-left: 5px solid #fd5826;
+}
+
+
+
+
+
+
+
+/* Fonts */
+			* {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+	/* Navigation */		
+			.top-bar-section ul li>a {
+				font-weight: light;
+				letter-spacing: 2px;
+				color: #fff;	
+			}
+
+/* Header */
+			
+	/* Navigation */
+		.header {
+			background: -webkit-linear-gradient(left, white, white 60%, #fd5826 30%, #fd5826);
+		}
+		.top-bar{
+			background-color: rgba(255,255,255,0);
+			height: 50px;
+			overflow: hidden;
+		}
+		.sticky * *{background-color: orange !important;} 
+		
+		.top-bar-section ul {
+				width: 66.66667%;
+			}
+		@media only screen and (min-width: 922px) {
+			.top-bar-section ul {
+				width: 100%;
+			}
+		}
+		
+/*FOOTER*/		
+
+#footer {
+	border-top: 2px solid #fd5826;
+	margin-top: 150px;
+}
+.menu-footer{
+margin-top: 30px;
+margin-bottom: 50px;
+}
+.menu-footer>li{
+	display: inline-block;
+	border-right: 1px solid black;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.menu-footer>li>a{
+color: #333333;
+font-weight: light;
+font-size: small;
+}
+/* Front-page Home */
+.home>.banner {
+width: 100%;
+background-color: grey;
+}
+
+.banner>.row>.video {
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.book-now{
+	background-color: #333333;
+	/* margin-top:65px; */
+}
+.book-now>h1{
+	font-size: 32px;
+	font-weight: lighter;
+	margin: 50px auto 15px auto;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+}
+.book-now>.button{
+	background-color:#fd5826;
+	margin:auto;
+	display: block;
+	width: 50%;
+	margin-bottom: 50px;
+}
+.banner>.row>.video>.flex-video  {
+margin: 0px;
+border: 10px solid white;
+}
+
+.genericon .genericon-facebook:before {
+content: '\f459';
+}
+
+
+
+
+
+
+
+
+
+
+

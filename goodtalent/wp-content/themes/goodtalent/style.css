@@ -1,0 +1,523 @@
+/*
+Theme Name: Good Talent
+Description: Child theme for the Cornerstone starter theme
+Author: Cameron Boyle
+Author URI: http: //www.cameronboyle.com.au
+Template: cornerstone
+Version: 1.0
+*/
+
+@import url(../cornerstone/style.css);
+
+.alignleft {display: inline; float: left; margin-right: 1.625em;}
+.alignright {display: inline; float: right; margin-left: 1.625em;}
+.aligncenter {clear: both; display: block; margin-left: auto; margin-right: auto;}
+
+.widget_nav_menu ul,.widget_recent_entries ul,.clearing-thumbs{list-style:none}
+
+.top-bar .title-area .name a {
+	font-size: 1.0625em;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	padding: 0 15px;
+	line-height: 45px;
+}
+
+.orbit-container {background: transparent;}
+
+#content,.sidebar{margin-top: 1em;}
+
+.entry-content ul:not([class*="block-grid-"]):not(.clearing-thumbs),.widget_archive ul{margin-left:2em;}
+
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen { }
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
+
+/* Start edits 
+	background: color position/size repeat origin clip 
+*/
+
+/*========================================================================================
+
+--------------------------------------------  STARTER
+
+========================================================================================*/
+
+* {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+body{-webkit-transition: all 1s; 
+		transition: all 0.2s;
+		-webkit-transition-timing-function:ease-out;
+		transition-timing-function: ease-out;
+	}
+
+.sticky * *{
+	-webkit-transition: all 1s; 
+		transition: all 0.2s;
+		-webkit-transition-timing-function:ease-out;
+		transition-timing-function: ease-out;
+
+}
+.top-bar{
+	-webkit-transition: all 1s; 
+		transition: all 0.2s;
+		-webkit-transition-timing-function:ease-out;
+		transition-timing-function: ease-out;
+
+ }
+
+.fixed * *{
+		-webkit-transition: all 1s; 
+		transition: all 0.2s;
+		-webkit-transition-timing-function:ease-out;
+		transition-timing-function:ease-out;
+}
+.fixed .top-bar{
+		-webkit-transition: all 1s; 
+		transition: all 0.2s;
+		-webkit-transition-timing-function:ease-out;
+		transition-timing-function: ease-out;
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 42px;
+}
+
+	h2 {
+	font-size: 32px;
+	color: #f6702a;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+blockquote, blockquote p {
+	line-height: 1.6;
+	color: #f6702a;
+}
+
+blockquote {
+	margin: 0 0 1.11111rem;
+	padding: 0.5rem 1.11111rem 0 1.05556rem;
+	border-left: 5px solid #f6702a;
+}
+
+
+
+
+
+
+
+/* Fonts */
+			* {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			li.toggle-topbar>a>span{
+			color: white;
+			padding: 20px;
+			}
+			li.toggle-topbar>a>span:hover{
+			color: #333333;
+			padding: 20px;
+			}
+	/* Navigation */		
+			.top-bar-section ul li>a {
+				font-weight: light;
+				letter-spacing: 2px;
+				color: #fff;	
+			}
+
+/*========================================================================================
+
+--------------------------------------------  HEADER
+
+========================================================================================*/
+
+/* ++++++++++++++++++++++++    NAVIGATION */
+
+		.sticky {
+			background: -webkit-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a);
+		}
+		.top-bar{
+			background-color: rgba(255,255,255,0);
+			height: 150px;
+			overflow: hidden;
+		}
+/* ++++++++++++++++++++++++    TOP BAR LARGE & NON FIXED */			
+	/* Top bar regular */
+		.contain-to-grid .sticky{
+		height: 150px;	
+		}
+		
+		.top-bar .name ,
+		.top-bar-section ul,
+		.top-bar .toggle-topbar{
+			height: 150px;
+		}
+		.title-area{
+			width:33.33333%;
+		}
+		.top-bar .name {
+			background: white;
+			padding: 52.5px 30px 41.5px 10px;
+		}
+		.top-bar-section ul{
+			background: #f6702a;
+			padding: 50px 0 51px 10px;
+			width: 66.6667%;
+		}
+		.top-bar .toggle-topbar{
+			background: #f6702a;
+			padding: 50px 0px 50px 0px;
+		}
+ 
+		.top-bar-section li:not(.has-form) a:not(.button)
+		{
+		
+			background-color: #f6702a;
+			line-height: 50px;
+		}
+		.top-bar-section li:not(.has-form):hover a:not(.button)
+		{
+			color: #333333;
+			background-color: #f6702a;
+			line-height: 50px;
+		}
+		
+		.top-bar-section li.active:not(.has-form) a:not(.button) {
+			color: #333333;
+			line-height: 50px;
+			background: #f6702a;
+			}
+		.top-bar-section li.active:not(.has-form):hover a:not(.button) {
+			color: #333333;
+			line-height: 50px;
+			background: #f6702a;
+			}
+		.top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
+			border-right: solid 1px #FFFFFF;
+			height:32px;
+			margin-top: 8px;
+		
+		}
+
+		.top-bar .toggle-topbar.menu-icon a{
+			height: 50px;
+			line-height: 50px;
+		}
+		.logo {
+		height: auto;
+		}
+		
+/* ++++++++++++++++++++++++    TOP BAR FIXED */		
+		.fixed {
+		margin-bottom: -30px;
+		}
+		.fixed .logo{
+			height: 50px;
+		}
+		.contain-to-grid .sticky .fixed {
+		height: 75px;	
+		}
+		
+		.fixed .top-bar {
+			height: 75px;
+		}
+		
+		.fixed .top-bar .toggle-topbar{
+			padding: 12.5px 0px 17.5px 0px;
+			height: auto;
+		}
+		.fixed .top-bar .name{
+			padding: 12.5px 30px 12.5px 0;
+			height: auto;
+		}
+		.fixed .top-bar-section ul{
+			padding: 12.5px 0 12.5px 10px;
+		}
+		
+/* ++++++++++++++++++++++++    TOP BAR EXPANDED */	
+		.expanded .top-bar-section ul {
+			height: auto;
+			padding: 0px 0px 0px 0px;
+			border-bottom: solid 3px black;
+		}
+		.expanded .name {
+			padding: 6.25px 30px 6.25px 0;
+			height: 75px;
+		}
+		.expanded .toggle-topbar{
+			padding: 12.5px 0px 12.5px 0px;
+			height: 75px;
+		}
+		
+		.expanded .top-bar-section li:not(.has-form) a:not(.button),
+		.expanded .top-bar-section li.active:not(.has-form):hover a:not(.button)
+		 {
+		background-color: #f6702a;
+		line-height: 30px;
+		
+		}
+		.top-bar.expanded .toggle-topbar a{
+			color:white;
+		}
+		.expanded .top-bar-section>ul>.divider {
+				border-top: solid 1px #fff;
+				height: 1px;
+				margin-top: 0px;
+		}
+
+
+		.top-bar-section>ul>.divider:first-child{
+			border-right: solid 0px #333333;
+		}
+
+
+
+
+/* ++++++++++++++++++++++++    TOP BAR MOBILE VERSION + MEDIUM 
+	
+	USE OF MEDIA QUERIES BECAUSE TOP BAR DOESNT ACCEPTS ROW & COLS
+	
+*/
+		@media only screen and (max-width: 64.063em) {
+		.sticky {
+			background: rgba(255,255,255,1);
+		}
+		.title-area{
+			width:100%;
+			background-color: #f6702a;
+		}
+		
+		.top-bar .name {
+			height: auto;
+			padding:53px 10px 53px 5px;
+			width:66.66667%;
+		}
+		.expanded .name{
+			padding: 6.25px 30px 6.25px 0;
+			height: 75px;
+			
+			
+		}
+		.top-bar .toggle-topbar,	
+		.fixed .top-bar .toggle-topbar{
+			padding: auto;
+			width:33.33333%;
+			font-size:1.8125rem;
+			text-align: center;
+			
+			
+		}
+		.top-bar.expanded .title-area {
+		background-color: #f6702a;
+		}
+		/*
+.fixed .logo{
+		height:auto;
+		}
+*/
+		.fixed .top-bar .name{
+		height:75px;
+		}
+		.fixed .top-bar .title-area {
+		height:75px;
+		}
+		.top-bar-section ul{
+			background-color: rgba(255,255,255,0);
+			color: rgba(255,255,255,0);
+			width: 100%;
+		}
+		.fixed .top-bar-section ul{
+			background-color: rgba(255,255,255,0);
+			color: rgba(255,255,255,0);}
+		.expanded .top-bar-section ul{
+			background-color: #f6702a;
+			color: white;}
+		}
+		
+
+	 
+/*========================================================================================
+
+--------------------------------------------  FOOTER
+
+========================================================================================*/		
+
+#footer {
+	border-top: 2px solid #f6702a;
+	margin-top: 150px;
+}
+.menu-footer{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.menu-footer>li{
+	display: inline-block;
+	border-right: 1px solid black;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.menu-footer>li>a{
+color: #333333;
+font-weight: light;
+font-size: small;
+}
+
+#footer i{
+color: #f6702a;
+font-size:  38px;
+margin-left: 10px;
+}
+
+/*
+ICONS FROM
+http://zurb.com/playground/foundation-icon-fonts-3#customize
+*/
+
+.social-footer{
+	padding: 22px;
+}
+#copyright{
+	font-size:  12px;
+	display: inline-block;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+/*========================================================================================
+
+--------------------------------------------  FRONT PAGE
+
+========================================================================================*/
+
+.home>.banner {
+width: 100%;
+background-color: grey;
+}
+
+.banner>.row>.video {
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.book-now{
+	background-color: #333333;
+	/* margin-top:65px; */
+}
+.book-now>h1{
+	font-size: 32px;
+	font-weight: lighter;
+	margin: 50px auto 15px auto;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+}
+.book-now>.button{
+	background-color:#f6702a;
+	margin:auto;
+	display: block;
+	width: 50%;
+	margin-bottom: 50px;
+}
+.banner>.row>.video>.flex-video  {
+margin: 0px;
+border: 10px solid white;
+}
+
+.genericon .genericon-facebook:before {
+content: '\f459';
+}
+
+/*========================================================================================
+
+--------------------------------------------  CORPORATE PAGE
+
+========================================================================================*/
+
+
+/*========================================================================================
+
+--------------------------------------------  Contact
+
+========================================================================================*/
+
+
+/* ++++++++++++++++++++++++    FORM */	
+#side_form {
+	margin-top: 4.8rem;
+}
+
+div.wpcf7-mail-sent-ok {
+border: 2px solid #f6702a;
+}
+div.wpcf7-response-output {
+margin: 0em 0em 1em;
+padding: 0.2em 4em;
+}
+
+form label {
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"],
+input[type="checkbox"], 
+textarea  {
+	background-color:  #e0e0e0;
+	border: none;
+	color: #333333;
+	font-weight: normal;
+}
+
+.wpcf7-checkbox>span{
+	display: block;
+}
+
+form .button {
+	background-color: #f6702a ;
+}
+form{
+	margin-top: 0.2rem;
+}
