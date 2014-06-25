@@ -1,8 +1,6 @@
 <?php
 
 // Enqueue CSS and scripts
-
-
 function load_cornerstone_child_scripts() {
 	wp_enqueue_style(
 		'cornerstone_child_css',
@@ -31,9 +29,11 @@ add_editor_style(get_stylesheet_directory_uri() . '/css/foundation-icons.css');
 
 
 add_action( 'wp_enqueue_scripts', 'themename_scripts' );
+/*
 function themename_scripts() {
     wp_enqueue_style( 'themename-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' );
 }
+*/
 
 
 ?>

@@ -375,14 +375,16 @@ blockquote {
 #footer {
 	border-top: 2px solid #f6702a;
 	margin-top: 150px;
+		margin-bottom:50px;
+	padding-top: 30px;
 }
-.menu-footer{
-margin-top: 30px;
-margin-bottom: 30px;
+.mc_custom_border_hdr{
+margin-bottom: 18px;
 }
 .menu-footer>li{
 	list-style: none;
 	margin-left: 0;
+	margin-bottom: 18px;
 }
 .menu-footer>li>a{
 	font-size: 14px;
@@ -395,13 +397,38 @@ font-size:  38px;
 margin-left: 10px;
 }
 
+/* ++++++++++++++++++++++++    Mail Chimp form*/
+
+
+#mc_embed_signup .mc-field-group .asterisk {
+position: inherit !important;
+}
+#mc_embed_signup .asterisk {
+color: #c60 !important;
+font-size: 100% !important;
+}
+#mc_embed_signup form {
+padding: 0px !important;
+}
+
+.mailchimp-form-title{
+display: block;
+	margin-bottom: 18px;
+}
+#mc-embedded-subscribe-form>div>input{
+	margin: 0px;
+	padding: 0px;
+}
+/* ++++++++++++++++++++++++*/    
+
+
 /*
 ICONS FROM
 http://zurb.com/playground/foundation-icon-fonts-3#customize
 */
 
 .social-footer{
-	padding: 22px;
+	padding: 0px;
 }
 
 #copyright{
@@ -523,6 +550,6 @@ textarea  {
 form .button {
 	background-color: #f6702a ;
 }
-form{
+.wpcf7-form{
 	margin-top: 0.2rem;
 }

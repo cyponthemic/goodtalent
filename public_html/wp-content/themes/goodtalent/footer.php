@@ -20,7 +20,7 @@
 						/* echo '</div>'; */
 		} ?>
 		<div class="large-3 columns social-footer">
-		<?php mailchimpSF_signup_form(); ?>
+		<?php  include('inc/mail-chimp.php')?>
 		</div>
 		<div class="large-3 columns social-footer">
 		<i class="fi-social-facebook right"><a href="www.twitter.com"></a></i>
