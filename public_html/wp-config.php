@@ -18,25 +18,10 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 include( dirname( __FILE__ ) . '/wp-config-local.php' );
 // Otherwise use the below settings (on live server)
 } else {
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'goodtale_wp345');
 
-/** MySQL database username */
-define('DB_USER', 'goodtale_wp345');
+include( dirname( __FILE__ ) . '/loginwordpress.php' );
 
-/** MySQL database password */
-define('DB_PASSWORD', 'w7a)S13)9P');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-}
 /**#@+
  * Authentication Unique Keys and Salts.
  *
