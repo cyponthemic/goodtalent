@@ -66,6 +66,7 @@ Version: 1.0
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333;
 	letter-spacing: 1px;
+	font-size: 14px;
 }
 
 body{-webkit-transition: all 1s; 
@@ -380,15 +381,12 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 .menu-footer>li{
-	display: inline-block;
-	border-right: 1px solid black;
-	padding-left: 8px;
-	padding-right: 8px;
+	list-style: none;
+	margin-left: 0;
 }
 .menu-footer>li>a{
-color: #333333;
-font-weight: light;
-font-size: small;
+	font-size: 14px;
+	color: #333333;
 }
 
 #footer i{
@@ -405,12 +403,19 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 .social-footer{
 	padding: 22px;
 }
+
 #copyright{
-	font-size:  12px;
 	display: inline-block;
 	padding-bottom: 10px;
-	text-align: center;
+	text-align: right;
 	width: 100%;
+}
+
+.cameron-boyle-logo {
+	width: 84px;
+	height: 30px;
+	background: url(img/cameron-boyle-logo.png);
+	list-style: none;	
 }
 
 
