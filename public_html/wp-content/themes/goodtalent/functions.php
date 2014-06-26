@@ -36,4 +36,45 @@ function themename_scripts() {
 */
 
 
+if ( ! function_exists( 'load_cornerstone_scripts' ) ) {
+
+	function load_cornerstone_scripts() {
+
+		wp_enqueue_script(
+			'foundation_modernizr_js',
+			get_template_directory_uri() . '/js/modernizr.js',
+			array(),
+			'2.7.2',
+			false
+		);
+
+		wp_enqueue_script(
+			'foundation_js',
+			get_template_directory_uri() . '/js/foundation.min.js',
+			array('jquery'),
+			'5.2.2',
+			true
+		);
+		wp_enqueue_script(
+			'foundation.topbar.js',
+			get_template_directory_uri() . '/js/foundation.topbar.js',
+			array('jquery'),
+			'5.2.2',
+			true
+		);
+		
+		wp_enqueue_script(
+			'mail-chimp.js',
+			get_stylesheet_directory_uri() . '/inc/mail-chimp.js',
+			array('jquery'),
+			'1',
+			true
+		);
+
+	}
+
+}
+
+add_action( 'wp_enqueue_scripts', 'load_cornerstone_scripts', 0 );
+
 ?>
