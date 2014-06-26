@@ -42,11 +42,34 @@ get_header(); ?>
 				
 				<style>
 				 .banner{
-				 background: 
-				 url(''),
-				 url('<?php echo $src[0]; ?>'),;
+					 position: relative;
+					 background:url('<?php echo get_stylesheet_directory_uri().'/img/stripe.png'?>');
 				 }
-				
+				 .banner:before {
+					 content : "";
+					 display: block;
+					 position: absolute;
+					 top: -50%;
+					 left: 0;
+					 background: #333333;
+					 width: 100%;
+					 height: 150%;
+					 opacity : 0.8;
+					 z-index: -1;
+					}
+					 .banner:after {
+					 content : "";
+					 display: block;
+					 position: absolute;
+					 top: -50%;
+					 left: 0;
+					 background:  
+					 				url('<?php echo $src[0]; ?>');
+					 width: 100%;
+					 height: 150%;
+					 opacity : 0.5;
+					 z-index: -2;
+					}
 				 </style>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 				<?php endwhile; ?>

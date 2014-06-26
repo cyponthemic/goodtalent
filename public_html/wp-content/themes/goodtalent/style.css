@@ -465,7 +465,6 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 
 .home>.banner {
 width: 100%;
-background-color: grey;
 }
 
 .banner>.row>.video {
@@ -473,7 +472,7 @@ background-color: grey;
 	margin-bottom: 23px;
 }
 .book-now{
-	background-color: #333333;
+	background-color: rgba(30,30,30,0.8);
 	/* margin-top:65px; */
 }
 .book-now>h1{
