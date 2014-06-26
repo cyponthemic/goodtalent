@@ -1,5 +1,5 @@
 # Don't add the Local test settings file to the repository #
-htdocs/wp-config-local.php
+wp-config-local.php
 loginwordpress.php
 .htaccess
  
