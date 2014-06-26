@@ -164,7 +164,10 @@ blockquote {
 /* ++++++++++++++++++++++++    NAVIGATION */
 
 		.sticky {
-			background: -webkit-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a);
+		background: -webkit-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* Standard syntax */
 		}
 		.top-bar{
 			background-color: rgba(255,255,255,0);
@@ -242,7 +245,7 @@ blockquote {
 		margin-bottom: -30px;
 		}
 		.fixed .logo{
-			height: 50px;
+			height: auto;
 		}
 		.contain-to-grid .sticky .fixed {
 		height: 75px;	
@@ -417,7 +420,6 @@ margin-left: 10px;
 .mc_custom_border_hdr{
 margin-bottom: 18px;
 }
-
 
 .mailchimp-form-title,
 .mailchimp-form-subscription{
