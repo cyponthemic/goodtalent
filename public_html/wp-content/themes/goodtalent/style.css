@@ -216,12 +216,12 @@ blockquote {
 		}
 		
 		.top-bar-section li.active:not(.has-form) a:not(.button) {
-			color: #333333;
+			color: white;
 			line-height: 50px;
 			background: #f6702a;
 			}
 		.top-bar-section li.active:not(.has-form):hover a:not(.button) {
-			color: #333333;
+			color: white;
 			line-height: 50px;
 			background: #f6702a;
 			}
