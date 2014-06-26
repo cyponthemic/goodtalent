@@ -378,9 +378,7 @@ blockquote {
 		margin-bottom:50px;
 	padding-top: 30px;
 }
-.mc_custom_border_hdr{
-margin-bottom: 18px;
-}
+
 .menu-footer>li{
 	list-style: none;
 	margin-left: 0;
@@ -392,33 +390,33 @@ margin-bottom: 18px;
 }
 
 #footer i{
-color: #f6702a;
+color: #333333;
 font-size:  38px;
 margin-left: 10px;
+}
+
+#footer>footer>div>ul{
+	margin-left: 0px;
 }
 
 /* ++++++++++++++++++++++++    Mail Chimp form*/
 
 
-#mc_embed_signup .mc-field-group .asterisk {
-position: inherit !important;
-}
-#mc_embed_signup .asterisk {
-color: #c60 !important;
-font-size: 100% !important;
-}
-#mc_embed_signup form {
-padding: 0px !important;
+.mc_custom_border_hdr{
+margin-bottom: 18px;
 }
 
-.mailchimp-form-title{
+
+.mailchimp-form-title,
+.mailchimp-form-subscription{
 display: block;
-	margin-bottom: 18px;
+	margin-bottom: 12px;
 }
-#mc-embedded-subscribe-form>div>input{
-	margin: 0px;
-	padding: 0px;
+#mc-embedded-subscribe-form>div>input,
+#mc-embedded-subscribe-form>div>select{
+	height: auto;
 }
+
 /* ++++++++++++++++++++++++*/    
 
 
@@ -536,7 +534,8 @@ input[type="tel"],
 input[type="time"], 
 input[type="url"],
 input[type="checkbox"], 
-textarea  {
+textarea,
+select  {
 	background-color:  #e0e0e0;
 	border: none;
 	color: #333333;
