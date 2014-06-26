@@ -66,6 +66,7 @@ Version: 1.0
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333;
 	letter-spacing: 1px;
+	font-size: 14px;
 }
 
 body{-webkit-transition: all 1s; 
@@ -374,28 +375,62 @@ blockquote {
 #footer {
 	border-top: 2px solid #f6702a;
 	margin-top: 150px;
+		padding-bottom:50px;
+	padding-top: 30px;
+	position:relative;
 }
-.menu-footer{
-margin-top: 30px;
-margin-bottom: 30px;
+#footer:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+	background: url('img/stripe.png');
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
 }
 .menu-footer>li{
-	display: inline-block;
-	border-right: 1px solid black;
-	padding-left: 8px;
-	padding-right: 8px;
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 18px;
 }
 .menu-footer>li>a{
-color: #333333;
-font-weight: light;
-font-size: small;
+	font-size: 14px;
+	color: #333333;
 }
 
 #footer i{
-color: #f6702a;
+color: #333333;
 font-size:  38px;
 margin-left: 10px;
 }
+
+#footer>footer>div>ul{
+	margin-left: 0px;
+}
+
+/* ++++++++++++++++++++++++    Mail Chimp form*/
+
+
+.mc_custom_border_hdr{
+margin-bottom: 18px;
+}
+
+
+.mailchimp-form-title,
+.mailchimp-form-subscription{
+display: block;
+	margin-bottom: 12px;
+}
+#mc-embedded-subscribe-form>div>input,
+#mc-embedded-subscribe-form>div>select{
+	height: auto;
+}
+
+/* ++++++++++++++++++++++++*/    
+
 
 /*
 ICONS FROM
@@ -403,14 +438,21 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 */
 
 .social-footer{
-	padding: 22px;
+	padding: 0px;
 }
+
 #copyright{
-	font-size:  12px;
 	display: inline-block;
 	padding-bottom: 10px;
-	text-align: center;
+	text-align: right;
 	width: 100%;
+}
+
+.cameron-boyle-logo {
+	width: 84px;
+	height: 30px;
+	background: url(img/cameron-boyle-logo.png);
+	list-style: none;	
 }
 
 
@@ -504,7 +546,8 @@ input[type="tel"],
 input[type="time"], 
 input[type="url"],
 input[type="checkbox"], 
-textarea  {
+textarea,
+select  {
 	background-color:  #e0e0e0;
 	border: none;
 	color: #333333;
@@ -518,6 +561,6 @@ textarea  {
 form .button {
 	background-color: #f6702a ;
 }
-form{
+.wpcf7-form{
 	margin-top: 0.2rem;
 }
