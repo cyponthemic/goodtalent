@@ -1,4 +1,5 @@
 # Don't add the Local settings file to the repository #
+public_html/wp-config-local.php
 wp-config-local.php
 loginwordpress.php
  
