@@ -407,6 +407,7 @@ blockquote {
 
 #footer {
 	border-top: 2px solid #f6702a;
+	border-bottom: 2px solid #f6702a;
 	margin-top: 150px;
 		padding-bottom:50px;
 	padding-top: 30px;
@@ -474,10 +475,8 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 }
 
 #copyright{
-	display: inline-block;
-	padding-bottom: 10px;
-	text-align: right;
-	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .cameron-boyle-logo {
