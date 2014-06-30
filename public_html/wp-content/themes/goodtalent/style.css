@@ -224,8 +224,8 @@ blockquote {
 		}
 		.top-bar-section ul{
 			background: #f6702a;
-			padding: 50px 0 51px 10px;
-			width: 66.6667%;
+			padding: 50px 0 51px 8%;
+			width: auto;
 		}
 		.top-bar .toggle-topbar{
 			background: #f6702a;
@@ -270,6 +270,7 @@ blockquote {
 		height: auto;
 		}
 		
+		
 /* ++++++++++++++++++++++++    TOP BAR FIXED */		
 		.fixed {
 		margin-bottom: -30px;
@@ -294,7 +295,7 @@ blockquote {
 			height: auto;
 		}
 		.fixed .top-bar-section ul{
-			padding: 12.5px 0 12.5px 10px;
+			padding: 12.5px 0 12.5px 8%;
 		}
 		
 /* ++++++++++++++++++++++++    TOP BAR EXPANDED */	
@@ -332,6 +333,7 @@ blockquote {
 		.top-bar-section>ul>.divider:first-child{
 			border-right: solid 0px #333333;
 		}
+		
 
 
 
@@ -422,17 +424,19 @@ blockquote {
 	background: url('img/stripe.png');
     width: 100%;
     height: 100%;
-    opacity : 0.5;
+    opacity : 0.25;
     z-index: -1;
 }
 .menu-footer>li{
 	list-style: none;
 	margin-left: 0;
 	margin-bottom: 18px;
-}
+	
+ }
 .menu-footer>li>a{
 	font-size: 14px;
 	color: #333333;
+	text-align: justify !important;
 }
 
 #footer i{
@@ -446,7 +450,9 @@ margin-left: 10px;
 }
 
 /* ++++++++++++++++++++++++    Mail Chimp form*/
-
+#mc_embed_signup form{
+	margin-bottom: 0px;
+}
 
 .mc_custom_border_hdr{
 margin-bottom: 18px;
@@ -457,6 +463,13 @@ margin-bottom: 18px;
 display: block;
 	margin-bottom: 12px;
 }
+
+#mc-embedded-subscribe{
+	padding: 10px 15px;
+	margin: 0px;
+	font-size: 14px;
+}
+
 #mc-embedded-subscribe-form>div>input,
 #mc-embedded-subscribe-form>div>select{
 	height: auto;
@@ -475,10 +488,13 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 }
 
 #copyright{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
 }
-
+#copyright p{
+	font-size: 12px !important;
+}
 .cameron-boyle-logo {
 	width: 84px;
 	height: 30px;

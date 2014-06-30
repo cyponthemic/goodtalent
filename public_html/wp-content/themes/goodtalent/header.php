@@ -30,7 +30,7 @@
 	    <li class="toggle-topbar "><a href="#"><span>Menu</span></a></li>
 	  </ul>
 	
-	  <section class="top-bar-section ">
+	  <section class="top-bar-section">
 	    <?php
 	      // Left Nav
 	      if ( has_nav_menu( 'header-menu-right' ) ) {
