@@ -30,12 +30,17 @@
 		
 		<div class="large-3 large-offset-0 medium-5 left small-6 columns copyright-footer">
 		<ul>
-		<li id="copyright">Copyright ©2014, All Rights Reserved</li>
+		
 		<li class="cameron-boyle-logo right"></li>
 		
 		</ul>
 		</div>
 	</footer>
+</div>
+<div id="copyright" class="row">
+	<div class="large-6 large-centered text-center columns">
+	<p class="text-center" style="font-size:18px;">Copyright ©2014, All Rights Reserved</p>
+	</div>
 </div>
 <?php wp_footer(); ?>
 </body>
