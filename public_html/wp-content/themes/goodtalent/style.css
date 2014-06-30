@@ -610,3 +610,7 @@ form .button {
 .wpcf7-form{
 	margin-top: 0.2rem;
 }
+.button:hover{
+color: #333333;
+	background: #f6702a;
+}
