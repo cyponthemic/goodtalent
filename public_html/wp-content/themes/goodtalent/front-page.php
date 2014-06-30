@@ -67,7 +67,7 @@ get_header(); ?>
 					 				url('<?php echo $src[0]; ?>');
 					 width: 100%;
 					 height: 150%;
-					 opacity : 0.5;
+					 opacity : 0.25;
 					 z-index: -2;
 					}
 				 </style>
