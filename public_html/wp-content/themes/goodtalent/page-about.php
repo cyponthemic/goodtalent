@@ -24,15 +24,20 @@ get_header(); ?>
 					</footer>
 
 				</article>
-
-			<?php endwhile; ?>
+							
 
 		</div>
 	</div>
 	<aside class="Left large-4 medium-4 small-12 columns">
-	<div style="height:30px;"></div>
-	<img src="<?php echo get_stylesheet_directory_uri() . '/img/media.jpg'?>" style="width:100%">
+					<div style="height:30px;"></div>
+						<?php 
+						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						  the_post_thumbnail();
+						} 
+						?>					
 	</aside>
+
+	<?php endwhile; ?>
 </div>
 
 <?php get_footer(); ?>
