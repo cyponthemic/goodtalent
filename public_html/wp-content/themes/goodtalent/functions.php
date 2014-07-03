@@ -20,7 +20,7 @@ function load_cornerstone_child_scripts() {
 
 add_action('wp_enqueue_scripts', 'load_cornerstone_child_scripts',50);
 
-
+global $wpgt_settings;
 $wpgt_settings=array();
 $wpgt_settings=get_option('wpgoodtalent_settings');
 

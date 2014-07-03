@@ -8,7 +8,7 @@
  * For example, it puts together the home page when no home.php file exists.
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
+ *<?php echo $wpgt_settings['wpgoodtalent_youtube_video']?> width="400" height="225"
  * @package WordPress
  * @subpackage Cornerstone
  * @since Cornerstone 1.0
@@ -16,17 +16,16 @@
 
 get_header(); ?>
 <div class="banner">
-
 	<div class="row">
 		<div class="large-7 columns video left">
-		<div class="flex-video widescreen vimeo">
-			<iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<div class="flex-video widescreen">
+			<iframe width="400" height="225" src="<?php echo $wpgt_settings['wpgoodtalent_youtube_video']?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="right large-offset-1 large-4 show-for-large-up columns" style="height:65px"></div>
 		<div class="large-offset-1 large-4 columns book-now right">
 		<h1>Join us at the next Good Talent event</h1>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link']?>" class="button text-center">Book now</a>
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>" class="button text-center">Book now</a>
 		</div>
 	</div>
 </div>
@@ -110,7 +109,6 @@ get_header(); ?>
 				if (function_exists("emm_paginate")) {
 			    emm_paginate();
 			} ?>
-
 		</div>
 	</div>
 
