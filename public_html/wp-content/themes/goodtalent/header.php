@@ -7,9 +7,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<?php
-    header('X-Frame-Options: GOFORIT'); 
-?>
 <!-- Set the viewport width to device width for mobile -->
 <meta name="viewport" content="initial-scale=1.0" />
 
