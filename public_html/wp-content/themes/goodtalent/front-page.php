@@ -25,7 +25,7 @@ get_header(); ?>
 		<div class="right large-offset-1 large-4 show-for-large-up columns" style="height:65px"></div>
 		<div class="large-offset-1 large-4 columns book-now right">
 		<h1>Join us at the next Good Talent event</h1>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>" class="button text-center">Book now</a>
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>"  target="_blank" class="button text-center">Book now</a>
 		</div>
 	</div>
 </div>
