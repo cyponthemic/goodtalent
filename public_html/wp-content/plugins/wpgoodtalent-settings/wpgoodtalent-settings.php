@@ -49,7 +49,6 @@ function wpgoodtalent_settings_options_page(){
 	
  	global  $plugin_url;
  	global $options;
- 	
  	/* Checking the form submission (wpgoodtalent_settings_form) */
 	
 	if(isset($_POST['wpgoodtalent_settings_form_submitted'])){
@@ -57,18 +56,51 @@ function wpgoodtalent_settings_options_page(){
 		$hidden_field = esc_html($_POST['wpgoodtalent_settings_form_submitted']);
 		
 			if( $hidden_field== 'Y') {
+					
+					/* Eventbrite */
 				$wpgoodtalent_eventbrite_link = esc_html($_POST['wpgoodtalent_eventbrite_link']);
 				$options['wpgoodtalent_eventbrite_link'] = $wpgoodtalent_eventbrite_link;
-				$options['last_updated'] = time();
-				
+					/* Youtube */
+					
+				/* Replace w a t c h ? v = (lenght:8) */
+				if(isset($_POST['wpgoodtalent_youtube_video'])&&substr($_POST['wpgoodtalent_youtube_video'],-19,8)=="watch?v="){
+				$wpgoodtalent_youtube_video=str_replace("watch?v=","embed/",esc_html($_POST['wpgoodtalent_youtube_video']));	
+				}
+				else {$wpgoodtalent_youtube_video=esc_html($_POST['wpgoodtalent_youtube_video']);}
+				/* $wpgoodtalent_youtube_video = esc_html($_POST['wpgoodtalent_youtube_video']); */
+				$options['wpgoodtalent_youtube_video'] = $wpgoodtalent_youtube_video;
+					/* Facebook */
+				$wpgoodtalent_facebook_page = esc_html($_POST['wpgoodtalent_facebook_page']);
+				$options['wpgoodtalent_facebook_page'] = $wpgoodtalent_facebook_page;
+					/* Twitter */
+				$wpgoodtalent_twitter_page = esc_html($_POST['wpgoodtalent_twitter_page']);
+				$options['wpgoodtalent_twitter_page'] = $wpgoodtalent_twitter_page;
+					/* Instagram */
+				$wpgoodtalent_instagram_page = esc_html($_POST['wpgoodtalent_instagram_page']);
+				$options['wpgoodtalent_instagram_page'] = $wpgoodtalent_instagram_page;
+					/* Store in DB */
+				$options['wpgoodtalent_last_updated'] = time();
 				update_option('wpgoodtalent_settings',$options); 
 
 			}
 		
-	} 
+	}
+	
+	/* Get from DB */
 	$options = get_option('wpgoodtalent_settings');
 	if($options!=''){
+	/* Eventbrite */
 		$wpgoodtalent_eventbrite_link=$options['wpgoodtalent_eventbrite_link'];
+	/* Youtube */
+		$wpgoodtalent_youtube_video=$options['wpgoodtalent_youtube_video'];
+	/* Facebook */
+		$wpgoodtalent_facebook_page=$options['wpgoodtalent_facebook_page'];
+	/* Twitter */
+		$wpgoodtalent_twitter_page=$options['wpgoodtalent_twitter_page'];
+	/* Instagram */
+		$wpgoodtalent_instagram_page=$options['wpgoodtalent_instagram_page'];
+	/* Updataded */
+		$wpgoodtalent_last_updated=$options['wpgoodtalent_last_updated'];
 	}
 	require('inc/option_page_wrapper.php');
 	

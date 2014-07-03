@@ -15,7 +15,7 @@
 					
 					<div class="postbox">
 					
-						<h3><span>Home page</span></h3>
+						<h3><span>Links</span></h3>
 						<div class="inside">
 							
 							<form name="wpgoodtalent_settings_form" method="post" action="">
@@ -27,20 +27,57 @@
 							-->
 							
 								<input type="hidden" name="wpgoodtalent_settings_form_submitted" value="Y">
-							<?php							if(isset($wpgoodtalent_eventbrite_link)&&substr($wpgoodtalent_eventbrite_link, 0,8)!='https://'):
+							<?php							if(isset($wpgoodtalent_eventbrite_link)&&substr($wpgoodtalent_eventbrite_link, 0,3)!='htt'):
 								$wpgoodtalent_eventbrite_link_err=true;
 								echo '<div class="error"><p>Invalid Fields</p></div>';
 								
 							
-							elseif(isset($wpgoodtalent_eventbrite_link)):echo '<div class="updated"><p>Saved</p></div>';
+							elseif(isset($wpgoodtalent_eventbrite_link)):echo '<div class="updated"><p>Saved: '.date('d-m-Y GG:i',$wpgoodtalent_last_updated).'</p></div>';
 							endif;
 							?>
 							<table class="form-table">
+							<tr>
+							<th>Home page :</th>
+							<tr>
 								<tr>
 									<td>
-										<label for="wpgoodtalent_eventbrite_link">Lien Eventbrite</label>
+										<label for="wpgoodtalent_eventbrite_link">URL Eventbrite</label>
 									<td>
 										<input name="wpgoodtalent_eventbrite_link" id="wpgoodtalent_eventbrite_link" type="text" value="<?php echo $wpgoodtalent_eventbrite_link;?>" class="regular-text" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="wpgoodtalent_youtube_video">URL Youtube video</label>
+									<td>
+										<input name="wpgoodtalent_youtube_video" id="wpgoodtalent_youtube_video" type="text" value="<?php echo $wpgoodtalent_youtube_video;?>" class="regular-text" />
+									</td>
+								</tr>
+								<tr>
+										<th>Social media :</th>
+								<tr>
+								<tr>
+									<td>
+										<label for="wpgoodtalent_facebook_page">URL Facebook page</label>
+									<td>
+										<input name="wpgoodtalent_facebook_page" id="wpgoodtalent_facebook_page" type="text" value="<?php echo $wpgoodtalent_facebook_page;?>" class="regular-text" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="wpgoodtalent_twitter_page">URL Twitter page</label>
+									<td>
+										<input name="wpgoodtalent_twitter_page" id="wpgoodtalent_twitter_page" type="text" value="<?php echo $wpgoodtalent_twitter_page;?>" class="regular-text" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="wpgoodtalent_instagram_page">URL Instagram page</label>
+									<td>
+										<input name="wpgoodtalent_instagram_page" id="wpgoodtalent_instagram_page" type="text" value="<?php echo $wpgoodtalent_instagram_page;?>" class="regular-text" />
 									</td>
 								</tr>
 								

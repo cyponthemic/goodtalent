@@ -1,4 +1,3 @@
-
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='MMERGE1';ftypes[1]='text';
 try {
     var jqueryLoaded=jQuery;
