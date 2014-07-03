@@ -30,10 +30,10 @@ $wpgt_settings=get_option('wpgoodtalent_settings');
 		<?php  include('inc/mail-chimp.php');?>
 		</div>
 		<div class="large-2 large-offset-1 medium-5 medium-offset-1 left small-6 columns social-footer">
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_facebook_page'];?>target="_blank""><i class="fi-social-facebook left"></i></a>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_twitter_page'];?>target="_blank""><i class="fi-social-twitter left"></i></a>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_instagram_page'];?>target="_blank""><i class="fi-social-instagram left"></i></a>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>target="_blank""><i class="fi-calendar left"></i></a>	
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_facebook_page'];?>"target="_blank"><i class="fi-social-facebook left"></i></a>
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_twitter_page'];?>"target="_blank"><i class="fi-social-twitter left"></i></a>
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_instagram_page'];?>"target="_blank"><i class="fi-social-instagram left"></i></a>
+		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>"target="_blank"><i class="fi-calendar left"></i></a>	
 		</div>
 		
 		<div class="large-3 large-offset-0 medium-5 left small-6 columns copyright-footer">
