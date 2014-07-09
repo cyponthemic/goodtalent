@@ -53,7 +53,7 @@ get_header(); ?>
 					 background: #333333;
 					 width: 100%;
 					 height: 150%;
-					 opacity : 0.8;
+					 opacity : 0.6;
 					 z-index: -1;
 					}
 					 .banner:after {
@@ -66,7 +66,7 @@ get_header(); ?>
 					 				url('<?php echo $src[0]; ?>');
 					 width: 100%;
 					 height: 150%;
-					 opacity : 0.25;
+					 opacity : 1;
 					 z-index: -2;
 					}
 				 </style>

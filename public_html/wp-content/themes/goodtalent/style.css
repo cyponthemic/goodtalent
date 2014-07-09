@@ -109,18 +109,26 @@ body{-webkit-transition: all 1s;
 
 h1 {
 	font-weight: lighter;
-	font-size: 42px;
+	font-size: 32px;
 }
 
 	h2 {
-	font-size: 32px;
+	font-size: 22px;
 	color: #f6702a;
-	font-weight: lighter;
+	font-weight: 200;
 }
 
+
+	h3 {
+	font-size: 18px;
+	color: #f6702a;
+	font-weight: 200;
+}
+
+
 p {
-	font-size: 24px;
-	font-weight: lighter;
+	font-size: 18px;
+	font-weight: 200;
 }
 
 blockquote, blockquote p {
