@@ -13,21 +13,21 @@
 	<label for="mce-EMAIL">Email Address 
 </label>
 -->
-	<input type="email" value="Email Adress" name="EMAIL" class="required email" id="mce-EMAIL">
+	<input type="email" value="Email Adress" name="EMAIL" class="required email" id="mce-EMAIL" style="color:gray !important;">
 </div>
 <div class="mc-field-group">
 <!--
 	<label for="mce-MMERGE1">Name
 </label>
 -->
-	<input type="text" value="Name" name="MMERGE1" class="required" id="mce-MMERGE1">
+	<input type="text" value="Name" name="MMERGE1" class="required" id="mce-MMERGE1" style="color:gray !important;">
 </div>
 <div class="mc-field-group">
 	<span class="mailchimp-form-title">Send me information about:</span>
-	<select name="group[10917]" class="REQ_CSS" id="mce-group[10917]">
-	<option value=""></option>
-	<option value="1">Corporate training</option>@
-<option value="2">Student workshops</option>
+	<select name="group[10917]" class="REQ_CSS" id="mce-group[10917]" style="color:gray !important;">
+	<option value="" >- Select -</option>
+	<option value="1" style="color:gray !important;">Corporate training</option>@
+<option value="2" style="color:gray !important;">Student workshops</option>
 
 	</select>
 </div>
