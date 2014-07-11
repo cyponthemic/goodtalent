@@ -17,12 +17,12 @@
 get_header(); ?>
 <div class="banner">
 	<div class="row">
-		<div class="large-7 columns video">
+		<div class="large-7 medium-7 columns video">
 			<div class="flex-video widescreen">
 			<iframe width="400" height="225" src="<?php echo $wpgt_settings['wpgoodtalent_youtube_video']?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="large-offset-1 large-4 columns book-now">
+		<div class="large-offset-1 large-4 medium-offset-1 medium-4 columns book-now">
 			<h1><?php $excerpt = get_the_excerpt();echo $excerpt ?> </h1>
 		</div>
 	</div>

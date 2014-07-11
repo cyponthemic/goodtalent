@@ -143,21 +143,34 @@ blockquote {
 }
 
 /* ------------------------------- TYPO SMALL  (min-width: 40.063em) */
+@media only screen and (max-width: 64.063em) {
+h1,h2,p{
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+}
 @media only screen and (max-width: 40.063em) {
 h1 {
 	font-weight: lighter;
 	font-size: 6.125vw;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 	h2 {
 	font-size: 7.5vw;
 	color: #f6702a;
 	font-weight: lighter;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 p {
 	font-size: 4vw;
 	font-weight: lighter;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 blockquote, blockquote p {
@@ -202,6 +215,7 @@ blockquote {
 /* ++++++++++++++++++++++++    NAVIGATION */
 
 		.fixbar {
+		background: white;
 		background: -webkit-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Firefox 3.6 to 15 */
@@ -526,7 +540,7 @@ http://zurb.com/playground/foundation-icon-fonts-3#customize
 width: 100%;
 padding: 20px;
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 40.063em) {
 .banner>.row{
 	display: -webkit-flex;
 	-webkit-align-items:center;
