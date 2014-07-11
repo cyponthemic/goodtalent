@@ -77,4 +77,6 @@ if ( ! function_exists( 'load_cornerstone_scripts' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'load_cornerstone_scripts', 0 );
 
+add_post_type_support( 'page', 'excerpt' );
+
 ?>

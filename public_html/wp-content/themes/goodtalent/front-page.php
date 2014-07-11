@@ -17,15 +17,13 @@
 get_header(); ?>
 <div class="banner">
 	<div class="row">
-		<div class="large-7 columns video left">
-		<div class="flex-video widescreen">
+		<div class="large-7 columns video">
+			<div class="flex-video widescreen">
 			<iframe width="400" height="225" src="<?php echo $wpgt_settings['wpgoodtalent_youtube_video']?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="right large-offset-1 large-4 show-for-large-up columns" style="height:65px"></div>
-		<div class="large-offset-1 large-4 columns book-now right">
-		<h1>Join us at the next Good Talent event</h1>
-		<a href="<?php echo $wpgt_settings['wpgoodtalent_eventbrite_link'];?>"  target="_blank" class="button text-center">Book now</a>
+		<div class="large-offset-1 large-4 columns book-now">
+			<h1><?php the_excerpt(); ?> </h1>
 		</div>
 	</div>
 </div>
