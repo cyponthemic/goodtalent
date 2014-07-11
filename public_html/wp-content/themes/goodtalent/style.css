@@ -545,9 +545,9 @@ padding: 20px;
 	}
 .book-now>h1{
 	padding: 20px;
-	/* font-size: 24px; */
-	font-weight: lighter;
-	text-align: center;
+	font-size: 24px;
+	/* font-weight: lighter; */
+	/* text-align: center; */
 	color: white !important;
 	letter-spacing: 1px;
 	opacity: 1;
