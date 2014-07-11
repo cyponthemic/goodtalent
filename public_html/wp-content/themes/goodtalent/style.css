@@ -342,6 +342,10 @@ blockquote {
 			border-right: solid 0px #333333;
 		}
 		
+		.contain-to-grid .top-bar {
+			max-width: 63rem;
+		}
+		
 
 
 
