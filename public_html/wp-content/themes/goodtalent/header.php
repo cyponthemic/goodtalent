@@ -17,7 +17,7 @@
 
 <body <?php body_class(); ?>>
 <div class="header">
-<div id="backgroundbar" class="contain-to-grid sticky">
+<div id="backgroundbar" class="contain-to-grid fixbar">
 	<nav class="top-bar row" data-topbar data-options="mobile_show_parent_link: true">
 	  <ul class="title-area">
 	    <li class="name">

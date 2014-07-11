@@ -201,7 +201,7 @@ blockquote {
 
 /* ++++++++++++++++++++++++    NAVIGATION */
 
-		.sticky {
+		.fixbar {
 		background: -webkit-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(left, white, white 50%, #f6702a 30%, #f6702a); /* For Firefox 3.6 to 15 */
@@ -214,7 +214,7 @@ blockquote {
 		}
 /* ++++++++++++++++++++++++    TOP BAR LARGE & NON FIXED */			
 	/* Top bar regular */
-		.contain-to-grid .sticky{
+		.contain-to-grid .fixbar{
 		height: 150px;	
 		}
 		
@@ -286,7 +286,7 @@ blockquote {
 		.fixed .logo{
 			max-height: 50px;
 		}
-		.contain-to-grid .sticky .fixed {
+		.contain-to-grid .fixbar .fixed {
 		height: 75px;	
 		}
 		
@@ -356,7 +356,7 @@ blockquote {
 	
 */
 		@media only screen and (max-width: 64.063em) {
-		.sticky {
+		.fixbar {
 			background: rgba(255,255,255,1);
 		}
 		.title-area{
