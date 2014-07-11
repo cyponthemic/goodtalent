@@ -15,16 +15,12 @@
 get_header(); ?>
 
 <div class="row">
-	<div id="primary" class="site-content small-12 medium-8 columns">
+	<div id="primary" class="site-content small-12 medium-8 large-8 columns right">
 		<div id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
 
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -35,16 +31,22 @@ get_header(); ?>
 					</footer>
 
 				</article>
-
-				<?php comments_template( '', true ); ?>
-
-			<?php endwhile; ?>
+							
 
 		</div>
 	</div>
+	<aside class="Left large-4 medium-4 small-12 columns">
+					<div style="height:30px;"></div>
+						<?php 
+						
+						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						  set_post_thumbnail_size( 300, 300, true );
+						  the_post_thumbnail('thumbnail');
+						} 
+						?>					
+	</aside>
 
-	<?php get_sidebar(); ?>
-
+	<?php endwhile; ?>
 </div>
 
 <?php get_footer(); ?>

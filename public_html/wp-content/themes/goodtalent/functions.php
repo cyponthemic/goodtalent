@@ -79,4 +79,9 @@ add_action( 'wp_enqueue_scripts', 'load_cornerstone_scripts', 0 );
 
 add_post_type_support( 'page', 'excerpt' );
 
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 300, 300 ,true);
+}
+
 ?>
