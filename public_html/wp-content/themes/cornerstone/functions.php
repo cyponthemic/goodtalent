@@ -152,9 +152,9 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'name'=> 'Footer Sidebar',
 		'id' => 'footer_sidebar',
-		'before_widget' => '<div id="%1$s" class="small-12 medium-4 columns %2$s">',
+		'before_widget' => '<div id="%1$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="footer-label">',
 		'after_title' => '</h4>',
 	));
 }

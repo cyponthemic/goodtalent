@@ -23,7 +23,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="large-offset-1 large-4 medium-offset-1 medium-4 columns book-now">
-			<h1><?php $excerpt = get_the_excerpt();echo $excerpt ?> </h1>
+			<h1 class="hook"><?php $excerpt = get_the_excerpt();echo $excerpt ?> </h1>
 		</div>
 	</div>
 </div>
